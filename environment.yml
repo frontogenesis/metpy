@@ -1,0 +1,24 @@
+ name: metpy
+ channels:
+   - conda-forge
+ dependencies:
+   - python>=3.6,<3.8
+   - numpy
+   - matplotlib
+   - cartopy
+   - jupyter
+   - metpy
+   - siphon
+   - pandas
+   - geopandas
+   - pip
+   - xarray
+   - pygrib
+   - cfgrib
+   - ipywidgets
+   - ffmpeg
+   - boto3
+   - botocore
+   - jupyterlab
+   - pip:
+      - python-awips

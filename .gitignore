@@ -1,0 +1,17 @@
+.ipynb_checkpoints/
+*.mp4
+*.tar
+*.tz
+*.tar.gz
+*.gz
+*.grib2
+*.idx
+*.cpg
+*.dbf
+*.prj
+*.shp
+*.shx
+*.sbn
+*.sbx
+*.zip
+*.info
