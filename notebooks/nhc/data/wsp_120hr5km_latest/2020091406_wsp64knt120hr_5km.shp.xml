@@ -3,8 +3,8 @@
 <citation>
 <citeinfo>
 <origin>National Hurricane Center</origin>
-<pubdate>09-12-2020</pubdate>
-<title>2020091218_wsp64knt120hr_5km</title>
+<pubdate>09-14-2020</pubdate>
+<title>2020091406_wsp64knt120hr_5km</title>
 <geoform>vector digital data</geoform>
 <onlink>http://www.nhc.noaa.gov/gis</onlink>
 </citeinfo>
@@ -31,7 +31,7 @@ Oceanic and Atmospheric Administration in the use of these data.
 <timeperd>
 <timeinfo>
 <sngdate>
-<caldate>200912/1800</caldate>
+<caldate>200914/0600</caldate>
 </sngdate>
 </timeinfo>
 <current></current>
@@ -161,7 +161,7 @@ Oceanic and Atmospheric Administration in the use of these data.
 </stdorder>
 </distinfo>
 <metainfo>
-<metd>09-12-2020</metd>
+<metd>09-14-2020</metd>
 <metc>
 <cntinfo>
 <cntorgp>
