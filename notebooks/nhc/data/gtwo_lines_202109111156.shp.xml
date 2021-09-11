@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata>
+
+<idinfo>
+
+<citation>
+<citeinfo>
+<origin>National Hurricane Center</origin>
+<pubdate>Sat Sep 11 11:56:57 2021</pubdate>
+<title>gtwo_lines_202109111156</title>
+<geoform>vector digital data</geoform>
+<onlink>http://www.nhc.noaa.gov/gis</onlink>
+</citeinfo>
+</citation>
+
+<descript>
+
+<purpose>
+These vector lines indicate the movements of disturbances from the current locations to their potential cyclone formation areas during the next five days in NHC's Graphical Tropical Weather Outlook (GTWO). They are usually symbolized with one-way arrows in the color codes of 5-day cyclone formation risk categories: yellow for low risk, orange for medium risk, red for high risk.
+</purpose>
+
+<abstract>
+The GTWO GIS version consists of three shapefiles that indicate (1) current disturbance locations with points, (2) 5-day potential cyclone formation areas with polygons, and (3) the movements of disturbances with vector lines if the current disturbances are not located in the potential cyclone formation areas. Each shapefile is furnished with the same attributes for each disturbance, including the basin of occurrence, the area number in that basin, 2-day formation probability, 2-day risk category, 5-day formation probability, and 5-day risk category. A disturbance is identified with both the basin of occurrence and the area number that refers to its potential cyclone formation area. This is also how a disturbance is associated with its forecast messages in the enclosed TWO text files. The cyclone formation probabilities range from 0% to 100% with 10% increments, and they are classified into three risk categories: Low for 0-30%, Medium for 40-60%, and High for 70-100%. Typical applications of these shapefiles are illustrated at www.hurricanes.gov.  If a potential tropical cyclone poses a risk to land within the watch/warning timeline, full advisories may be issued for a potential tropical cyclone.  In that case, there will be no formation area polygon or current location point included in the GTWO shapefiles.  Users are instead advised to use the shapefiles available at www.hurricanes.gov/gis, released with each forecast advisory. 
+</abstract>
+
+</descript>
+
+<timeperd>
+<timeinfo>
+<sngdate>
+<caldate>Sat Sep 11 11:56:57 2021</caldate>
+</sngdate>
+</timeinfo>
+<current>Forecast Advisory Date/Time</current>
+</timeperd>
+
+<status>
+<progress>Complete</progress>
+<update>None planned</update>
+</status>
+
+<spdom>
+<bounding>
+<westbc>-94.74</westbc>
+<eastbc>-92.87</eastbc>
+<northbc>20.69</northbc>
+<southbc>18.02</southbc>
+</bounding>
+</spdom>
+
+<keywords>
+
+<theme>
+<themekt>None</themekt>
+<themekey>Hurricane</themekey>
+<themekey>Major Hurricane</themekey>
+<themekey>Tropical Cyclone</themekey>
+<themekey>Tropical Storm</themekey>
+<themekey>Tropical Depression</themekey>
+<themekey>Tropical Disturbance</themekey>
+<themekey>Tropical Low</themekey>
+<themekey>Tropical Wave</themekey>
+<themekey>Subtropical Cyclone</themekey>
+<themekey>Subtropical Storm</themekey>
+<themekey>Subtropical Depression</themekey>
+<themekey>Subtropical Disturbance</themekey>
+<themekey>Subtropical Low</themekey>
+<themekey>Post-Tropical Cyclone</themekey>
+<themekey>Remnants</themekey>
+</theme>
+
+<place>
+<placekt>None</placekt>
+<placekey>United States</placekey>
+<placekey>Atlantic</placekey>
+<placekey>North Atlantic Basin</placekey>
+<placekey>Gulf of Mexico</placekey>
+<placekey>Caribbean Sea</placekey>
+<placekey>Pacific Islands</placekey>
+<placekey>Eastern North Pacific Basin</placekey>
+</place>
+
+</keywords>
+
+<accconst>None</accconst>
+
+<datacred>
+Acknowledgement of the National Oceanic and Atmospheric Administration (NOAA), National Weather Service (NWS) or National Hurricane Center (NHC) would be appreciated if the product is used directly or indirectly.
+</datacred>
+
+<useconst>
+There are virtually no limitations on the use of this product.
+</useconst>
+
+<ptcontac>
+<cntinfo>
+<cntperp>
+<cntper>GIS POC</cntper>
+<cntorg>National Hurricane Center / Technical Support Branch</cntorg>
+</cntperp>
+<cntaddr>
+<addrtype>physical address</addrtype>
+<address>11691 SW 17th St.</address>
+<city>Miami</city>
+<state>FL</state>
+<postal>33165</postal>
+<country>USA</country>
+</cntaddr>
+</cntinfo>
+</ptcontac>
+
+<native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.2.4.1420</native>
+
+</idinfo>
+
+<spdoinfo>
+<direct>Vector</direct>
+<ptvctinf>
+<sdtsterm>
+<sdtstype>String</sdtstype>
+<ptvctcnt>1</ptvctcnt>
+</sdtsterm>
+</ptvctinf>
+</spdoinfo>
+
+<spref>
+<horizsys>
+<geograph>
+<latres>0.1</latres>
+<longres>0.1</longres>
+<geogunit>Decimal degrees</geogunit>
+</geograph>
+<geodetic>
+<horizdn>D_Sphere</horizdn>
+<ellips>Sphere</ellips>
+<semiaxis>6371200.000000</semiaxis>
+<denflat>infinity</denflat>
+</geodetic>
+</horizsys>
+</spref>
+
+<eainfo>
+<detailed>
+
+<enttyp>
+<enttypl>gtwo_lines_202109111156</enttypl>
+</enttyp>
+
+<attr>
+<attrlabl>FID</attrlabl>
+<attrdef>Internal feature number.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Sequential integers starting from 0.</udom>
+</attrdomv>
+</attr>
+
+<attr>
+<attrlabl>Shape</attrlabl>
+<attrdef>Feature geometry.</attrdef>
+<attrdefs>ESRI</attrdefs>
+<attrdomv>
+<udom>Descriptive words.</udom>
+</attrdomv>
+</attr>
+
+<attr>
+<attrlabl>BASIN</attrlabl>
+<attrdef>The ocean basin where the tropical or subtropical cyclone is occurring.</attrdef>
+<attrdomv>
+<edom>
+<edomv>Atlantic</edomv>
+<edomvd>North Atlantic Basin</edomvd>
+</edom>
+<edom>
+<edomv>East Pacific</edomv>
+<edomvd>Eastern North Pacific Basin</edomvd>
+</edom>
+</attrdomv>
+</attr>
+
+<attr>
+<attrlabl>AREA</attrlabl>
+<attrdef>The number of a cyclone formation area in each basin.</attrdef>
+</attr>
+
+<attr>
+<attrlabl>PROB2DAY</attrlabl>
+<attrdef>Probability of cyclone formation in 2 days, ranging from 0% to 100% in 10% increments.</attrdef>
+</attr>
+
+<attr>
+<attrlabl>RISK2DAY</attrlabl>
+<attrdef>Risk category of cyclone formation in 2 days, ranging Low, Medium or High.</attrdef>
+<attrdomv>
+<edom>
+<edomv>Low</edomv>
+<edomvd>Probablility of cyclone formation is 0-20%</edomvd>
+</edom>
+<edom>
+<edomv>Medium</edomv>
+<edomvd>Probability of cyclone formation is 30-50%</edomvd>
+</edom>
+<edom>
+<edomv>High</edomv>
+<edomvd>Probability of cyclone formation is 50-100%</edomvd>
+</edom>
+</attrdomv>
+</attr>
+
+<attr>
+<attrlabl>PROB5DAY</attrlabl>
+<attrdef>Probablility of cyclone formation in 5 days, ranging from 0% to 100% in 10% increments.</attrdef>
+</attr>
+
+<attr>
+<attrlabl>RISK5DAY</attrlabl>
+<attrdef>Risk category of cyclone formation in 5 days, ranging Low, Medium or High.</attrdef>
+<attrdomv>
+<edom>
+<edomv>Low</edomv>
+<edomvd>Probablility of cyclone formation is 0-20%</edomvd>
+</edom>
+<edom>
+<edomv>Medium</edomv>
+<edomvd>Probability of cyclone formation is 30-50%</edomvd>
+</edom>
+<edom>
+<edomv>High</edomv>
+<edomvd>Probability of cyclone formation is 50-100%</edomvd>
+</edom>
+</attrdomv>
+</attr>
+
+</detailed>
+</eainfo>
+
+<distinfo>
+<resdesc>Downloadable Data</resdesc>
+<distliab>No responsibility is assumed by the National Oceanic and Atmospheric Administration in the use of these data.</distliab>
+<stdorder>
+<digform>
+<digtinfo>
+<transize>*SIZ*</transize>
+</digtinfo>
+</digform>
+</stdorder>
+</distinfo>
+
+<metainfo>
+
+<metd>Sat Sep 11 11:56:57 2021</metd>
+
+<metc>
+<cntinfo>
+<cntorgp>
+<cntorg>National Hurricane Center</cntorg>
+<cntper>GIS POC</cntper>
+</cntorgp>
+<cntpos>Technical Support Branch</cntpos>
+<cntaddr>
+<addrtype>physical address</addrtype>
+<address>11691 SW 17th St.</address>
+<city>Miami</city>
+<state>FL</state>
+<postal>33178</postal>
+<country>USA</country>
+</cntaddr>
+<cntvoice>305-229-4400</cntvoice>
+</cntinfo>
+</metc>
+
+<metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+<metstdv>FGDC-STD-001-1998</metstdv>
+<mettc>local time</mettc>
+
+<metextns>
+<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+<metprof>ESRI Metadata Profile</metprof>
+</metextns>
+
+</metainfo>
+
+</metadata>
