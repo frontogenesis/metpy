@@ -18,17 +18,18 @@ except:
 
 class Map:
     
-    def __init__(self, region):
+    def __init__(self, region, proj=ccrs.PlateCarree()):
         '''
         Builds a map from a pre-defined set of regions.
         See the areas dict in the make_map method for these areas.
         '''
         self.region = region.lower()
         self.fig = plt.figure(figsize=(1280/72, 720/72))
-        self.ax = self.fig.add_axes([0, 0, 1, 1], projection=ccrs.PlateCarree())
+        self.ax = self.fig.add_axes([0, 0, 1, 1], projection=proj)
         self.ax.add_feature(cfeature.OCEAN.with_scale('50m'), color='lightgray')
         self.hi_res_states = self.ax.add_feature(cfeature.STATES.with_scale('10m'), linewidth=1.5, zorder=5)
         self.ax.set_adjustable('datalim')
+        self.ax.spines['geo'].set_visible(False)
         
     def make_map(self):    
         areas = {
