@@ -54,7 +54,8 @@ class Map:
     
     def add_counties(self):
         '''Add U.S. counties to map axes'''
-        self.ax.add_feature(USCOUNTIES.with_scale('20m'), edgecolor='lightgray', linewidth=0.75)
+        self.ax.add_feature(USCOUNTIES.with_scale('20m'), edgecolor='lightgray', 
+                            linewidth=0.75, zorder=4)
         
     def add_latlon_lines(self):
         '''Add latitude and longitude gridlines to the map axes'''
@@ -72,5 +73,5 @@ class Map:
         of the Tropical Atlantic Basin.
         '''
         self.hi_res_states.set_visible(False)
-        self.ax.add_feature(cfeature.STATES.with_scale('50m'), linewidth=2.0)
+        self.ax.add_feature(cfeature.STATES.with_scale('50m'), linewidth=2.0, zorder=5)
         self.ax.add_feature(cfeature.COASTLINE.with_scale('10m'))
