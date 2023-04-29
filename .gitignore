@@ -15,3 +15,11 @@
 *.sbx
 *.zip
 *.info
+
+# Do not include image files
+*.png
+*.gif
+*.mp4
+
+# Folders
+notebooks/nhc/data

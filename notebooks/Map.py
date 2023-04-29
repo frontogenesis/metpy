@@ -27,7 +27,7 @@ class Map:
         self.fig = plt.figure(figsize=(1280/72, 720/72))
         self.ax = self.fig.add_axes([0, 0, 1, 1], projection=proj)
         self.ax.add_feature(cfeature.OCEAN.with_scale('50m'), color='lightgray')
-        self.hi_res_states = self.ax.add_feature(cfeature.STATES.with_scale('10m'), linewidth=1.5, zorder=5)
+        self.hi_res_states = self.ax.add_feature(cfeature.STATES.with_scale('10m'), linewidth=2.0, zorder=5)
         self.ax.set_adjustable('datalim')
         self.ax.spines['geo'].set_visible(False)
         
@@ -36,8 +36,11 @@ class Map:
             'mid_atlantic': [-79.0, -71.0, 38, 41.5],
             'southeast': [-91, -77, 23.5, 38.5],
             'florida': [-86.0, -81.0, 23.3, 33.0],
+            'north_florida': [-84.0, -80.0, 28.0, 32.0],
             'florida_panhandle': [-87.5, -83.5, 28.7, 32.2],
+            'tampa_area': [-84, -81, 26, 30],
             'south_carolina': [-82, -79, 31.2, 36.3],
+            'texas': [-98, -93, 24, 37],
             'tropical_atlantic': [-100, -10, 5, 42]
         }.get(self.region, [-130, -65, 22, 48])
         
@@ -48,7 +51,7 @@ class Map:
     def add_title(self, title):
         '''Add title to map axes'''
         self.ax.set_title(title, loc='left', ha='left', va='top', 
-                          fontsize=48, color='white', fontweight='bold', 
+                          fontsize=36, color='white', fontweight='bold', 
                           fontname='Arial', y=0.95, x=0.01, zorder=10,
                           bbox=dict(facecolor='navy', alpha=1.0, edgecolor='none'))
     
