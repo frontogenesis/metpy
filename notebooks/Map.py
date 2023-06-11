@@ -60,6 +60,11 @@ class Map:
         self.ax.add_feature(USCOUNTIES.with_scale('20m'), edgecolor='lightgray', 
                             linewidth=0.75, zorder=4)
         
+    def conceal_data_over_ocean(self):
+        '''Hides data beneath ocean for a mask-like appearance'''
+        self.ax.add_feature(cfeature.OCEAN.with_scale('10m'), color='lightgray', zorder=9)
+        self.ax.add_feature(cfeature.STATES.with_scale('10m'), linewidth=1.5, zorder=10)
+        
     def add_latlon_lines(self):
         '''Add latitude and longitude gridlines to the map axes'''
         gl = self.ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
