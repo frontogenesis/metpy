@@ -17,7 +17,7 @@ except:
 try:
     from dateutil import tz
 except:
-    warnings.warn('Warning: Pygrib is not installed in your environment.')
+    warnings.warn('Warning: dateutil is not installed in your environment.')
 
 
 class Data:
@@ -25,10 +25,10 @@ class Data:
         self.url = url
 
     def xr_read_dataset(self):
-        '''
+        """
         Reads in data over the network, writes it as a temporary file,
         and returns an XArray Dataset
-        '''
+        """
         response = urllib.request.urlopen(self.url)
         compressed_file = response.read()
 
@@ -37,10 +37,10 @@ class Data:
             return xr.load_dataset(f.name)
         
     def pygrib_read_dataset(self):
-        '''
+        """
         Reads in data over the network, writes it as a temporary file,
         and returns a Pygrib Dataset
-        '''
+        """
         response = urllib.request.urlopen(self.url)
         file = response.read()
     
@@ -90,4 +90,16 @@ class ValidTime:
         local_time = self.roundTime(local_time)
         date_time = datetime.strftime(local_time, '%a, %b %d, %Y %I:%M %p').lstrip('0').replace(' 0', ' ')
         
+        return date_time
+
+    @staticmethod
+    def convert_datetime_xarray(datetime64):
+        """Returns valid local time from xarray Data Array - time dimension"""
+        string = str(datetime64)
+        from_zone = tz.gettz('UTC')
+        to_zone = tz.gettz('America/Chicago')
+        
+        utc_time = datetime.strptime(string, '%Y-%m-%dT%H%M:00:00.000000000').replace(tzinfo=from_zone)
+        eastern = utc_time.astimezone(to_zone)
+        date_time = datetime.strftime(eastern, '%a, %b %d, %Y %I:%M %p').lstrip('0').replace(' 0', ' ')
         return date_time
